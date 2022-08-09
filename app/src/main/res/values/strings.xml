@@ -36,4 +36,11 @@
     <string name="Market">Market</string>
     <string name="MarketTrade">Make Trade</string>
 
+    <!-- Strings Wallet Page -->
+    <string name="Wallet">Wallet</string>
+    <string name="ViewLiquidity">View Liquidity</string>
+    <string name="ViewArt">View Art Pieces</string>
+    <string name="ViewWalletWorth">View Wallet Worth</string>
+    <string name="MintArt">Mint New Art</string>
+
 </resources>

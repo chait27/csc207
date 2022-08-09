@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <View
         android:id="@+id/mainMenuTopDivider"
@@ -22,7 +22,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="250dp"
-        android:text="@string/MainMenuText"
+        android:text="@string/Wallet"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -33,11 +33,12 @@
         android:id="@+id/WalletOption1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option1"
         app:layout_constraintEnd_toStartOf="@+id/WalletOption1Text"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuTopDivider" />
 
@@ -45,11 +46,12 @@
         android:id="@+id/WalletOption2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option2"
         app:layout_constraintEnd_toStartOf="@+id/WalletOption2Text"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WalletOption1" />
 
@@ -57,11 +59,12 @@
         android:id="@+id/WalletOption3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option3"
         app:layout_constraintEnd_toStartOf="@+id/WalletOption3Text"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WalletOption2" />
 
@@ -69,56 +72,44 @@
         android:id="@+id/WalletOption4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option4"
         app:layout_constraintEnd_toStartOf="@+id/WalletOption4Text"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WalletOption3" />
-
-    <Button
-        android:id="@+id/mainMenuOption5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/Option5"
-        app:layout_constraintEnd_toStartOf="@+id/mainMenuOption5Text"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption4" />
 
     <TextView
         android:id="@+id/WalletOption1Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="96dp"
-        android:text="@string/MainMenuMarket"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/ViewLiquidity"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mainMenuTopDivider"
-        android:textSize="20sp"/>
+        app:layout_constraintTop_toTopOf="@+id/mainMenuTopDivider" />
 
     <TextView
         android:id="@+id/WalletOption2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="96dp"
-        android:text="@string/MainMenuWallet"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/ViewArt"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption1Text"
-        android:textSize="20sp"/>
+        app:layout_constraintTop_toBottomOf="@+id/WalletOption1Text" />
 
     <TextView
         android:id="@+id/WalletOption3Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="104dp"
-        android:text="@string/MainMenuProfile"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/ViewWalletWorth"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WalletOption2Text" />
@@ -127,21 +118,11 @@
         android:id="@+id/WalletOption4Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="148dp"
-        android:text="@string/MainMenuLogout"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/MintArt"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WalletOption3Text" />
 
-    <TextView
-        android:id="@+id/mainMenuOption5Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="72dp"
-        android:text="@string/MainMenuExit"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption4Text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
