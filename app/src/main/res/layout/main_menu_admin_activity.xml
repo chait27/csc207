@@ -70,10 +70,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option4"
         app:layout_constraintEnd_toStartOf="@+id/mainMenuOption4Text"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption3" />
 
@@ -86,7 +87,7 @@
         android:layout_marginEnd="20dp"
         android:text="@string/Option5"
         app:layout_constraintEnd_toStartOf="@+id/mainMenuOption5Text"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption4" />
 
@@ -95,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option6"
         app:layout_constraintEnd_toStartOf="@+id/mainMenuOption6Text"
@@ -107,11 +108,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="100dp"
         android:text="@string/MainMenuMarket"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mainMenuOption2"
         app:layout_constraintTop_toTopOf="@+id/mainMenuTopDivider" />
 
     <TextView
@@ -119,11 +119,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="95dp"
         android:text="@string/MainMenuWallet"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mainMenuOption3"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption1Text" />
 
     <TextView
@@ -135,42 +134,37 @@
         android:text="@string/MainMenuProfile"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mainMenuOption4"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption2Text" />
 
     <TextView
         android:id="@+id/mainMenuOption4Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="148dp"
-        android:text="@string/MainMenuLogout"
+        android:layout_width="147dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/MainMenuAdmin"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toEndOf="@+id/mainMenuOption5"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption3Text" />
 
     <TextView
         android:id="@+id/mainMenuOption5Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="72dp"
-        android:text="@string/MainMenuExit"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="152dp"
+        android:text="@string/MainMenuLogout"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toEndOf="@+id/mainMenuOption6"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption4Text" />
 
     <TextView
         android:id="@+id/mainMenuOption6Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="110dp"
-        android:text="@string/MainMenuAdmin"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/MainMenuExit"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainMenuOption5Text" />

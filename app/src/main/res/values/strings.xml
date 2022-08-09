@@ -31,8 +31,9 @@
     <string name="GoBack">Go Back</string>
 
     <!-- Strings Market Page -->
-
     <string name="ViewItem">View Items on Market</string>
     <string name="PutItem">Put Item onto Market</string>
+    <string name="Market">Market</string>
+    <string name="MarketTrade">Make Trade</string>
 
 </resources>
