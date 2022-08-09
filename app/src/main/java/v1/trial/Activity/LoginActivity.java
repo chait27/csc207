@@ -34,8 +34,6 @@ public class LoginActivity extends AppCompatActivity {
                     TextView printResult = findViewById(R.id.resultTestView);
                     printResult.setText(getResources().getString(R.string.loginTryAgain));
                 }
-
-
             }
         });
     }
