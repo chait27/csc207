@@ -1,10 +1,10 @@
-package usecases.user;
+package v1.trial.usecases.user;
 
-import databases.UserRepository;
-import entity.user.AdminUser;
-import entity.user.User;
-import usecases.art.ArtManager;
-import usecases.markets.WalletManager;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.user.AdminUser;
+import v1.trial.entity.user.User;
+import v1.trial.usecases.art.ArtManager;
+import v1.trial.usecases.markets.WalletManager;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package exceptions.user;
+package v1.trial.exceptions.user;
 
 public class UserIsBannedException extends UsernameException {
     public UserIsBannedException(final String username) {

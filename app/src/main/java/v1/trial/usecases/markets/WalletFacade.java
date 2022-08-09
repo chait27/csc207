@@ -1,10 +1,10 @@
-package usecases.markets;
+package v1.trial.usecases.markets;
 
-import entity.art.Art;
-import entity.markets.Wallet;
-import exceptions.market.WalletNotFoundException;
-import usecases.art.ArtFacade;
-import usecases.art.ArtManager;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.exceptions.market.WalletNotFoundException;
+import v1.trial.usecases.art.ArtFacade;
+import v1.trial.usecases.art.ArtManager;
 
 import java.util.*;
 

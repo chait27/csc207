@@ -1,10 +1,10 @@
-package usecases.user;
+package v1.trial.usecases.user;
 
-import databases.UserRepository;
-import entity.user.BasicUser;
-import entity.user.User;
-import exceptions.user.IncorrectUserNameOrPasswordException;
-import exceptions.user.UserIsBannedException;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.user.BasicUser;
+import v1.trial.entity.user.User;
+import v1.trial.exceptions.user.IncorrectUserNameOrPasswordException;
+import v1.trial.exceptions.user.UserIsBannedException;
 
 public class LogIn {
     private final UserRepository userRepository;

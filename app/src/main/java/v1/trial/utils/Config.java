@@ -1,4 +1,4 @@
-package utils;
+package v1.trial.utils;
 
 public class Config {
     private final String rootDirectory;

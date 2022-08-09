@@ -1,11 +1,11 @@
-package usecases.user;
+package v1.trial.usecases.user;
 
-import databases.UserRepository;
-import entity.user.BasicUser;
-import entity.user.User;
-import exceptions.user.UserDoesNotExistException;
-import exceptions.user.UserIsNotBannableException;
-import interfaces.IBannableUser;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.user.BasicUser;
+import v1.trial.entity.user.User;
+import v1.trial.exceptions.user.UserDoesNotExistException;
+import v1.trial.exceptions.user.UserIsNotBannableException;
+import v1.trial.interfaces.IBannableUser;
 
 import java.time.LocalDateTime;
 

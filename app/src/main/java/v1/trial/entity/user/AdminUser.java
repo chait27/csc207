@@ -1,4 +1,4 @@
-package entity.user;
+package v1.trial.entity.user;
 
 public class AdminUser extends User{
     /**

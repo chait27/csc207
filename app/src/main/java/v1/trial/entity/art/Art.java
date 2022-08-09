@@ -1,4 +1,4 @@
-package entity.art;
+package v1.trial.entity.art;
 
 import java.util.UUID;
 
@@ -6,8 +6,8 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import com.amazonaws.services.dynamodbv2.document.Item;
-import entity.markets.Wallet;
-import interfaces.Merchandise;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.interfaces.Merchandise;
 @DynamoDBTable(tableName = "art")
 public class Art implements Merchandise{
     @DynamoDBHashKey

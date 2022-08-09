@@ -1,8 +1,8 @@
-package factory;
+package v1.trial.factory;
 
-import entity.user.AdminUser;
-import entity.user.BasicUser;
-import entity.user.User;
+import v1.trial.entity.user.AdminUser;
+import v1.trial.entity.user.BasicUser;
+import v1.trial.entity.user.User;
 import java.time.LocalDateTime;
 
 public class UserFactory {

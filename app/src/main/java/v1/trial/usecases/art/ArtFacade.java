@@ -1,6 +1,6 @@
-package usecases.art;
+package v1.trial.usecases.art;
 
-import entity.art.Art;
+import v1.trial.entity.art.Art;
 import java.util.UUID;
 
 public class ArtFacade {

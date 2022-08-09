@@ -1,14 +1,14 @@
-package usecases.user;
+package v1.trial.usecases.user;
 
-import databases.UserRepository;
-import entity.markets.Wallet;
-import entity.user.AdminUser;
-import entity.user.BasicUser;
-import entity.user.User;
-import exceptions.user.UserDoesNotExistException;
-import exceptions.user.UsernameAlreadyExistsException;
-import factory.UserFactory;
-import usecases.markets.WalletManager;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.entity.user.AdminUser;
+import v1.trial.entity.user.BasicUser;
+import v1.trial.entity.user.User;
+import v1.trial.exceptions.user.UserDoesNotExistException;
+import v1.trial.exceptions.user.UsernameAlreadyExistsException;
+import v1.trial.factory.UserFactory;
+import v1.trial.usecases.markets.WalletManager;
 
 public class CreateUser {
     private final UserRepository userRepository;

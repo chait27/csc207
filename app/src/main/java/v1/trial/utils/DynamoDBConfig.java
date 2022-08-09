@@ -1,4 +1,4 @@
-package utils;
+package v1.trial.utils;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;

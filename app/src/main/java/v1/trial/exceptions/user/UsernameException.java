@@ -1,4 +1,4 @@
-package exceptions.user;
+package v1.trial.exceptions.user;
 
 public class UsernameException extends RuntimeException {
     public UsernameException(final String username, final String message) {

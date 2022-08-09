@@ -1,14 +1,14 @@
-package usecases.markets;
+package v1.trial.usecases.markets;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
-import databases.UserRepository;
-import entity.art.Art;
-import entity.markets.Wallet;
-import interfaces.Merchandise;
-import usecases.art.ArtFacade;
-import usecases.art.ArtManager;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.interfaces.Merchandise;
+import v1.trial.usecases.art.ArtFacade;
+import v1.trial.usecases.art.ArtManager;
 
 import java.util.UUID;
 public class Market {

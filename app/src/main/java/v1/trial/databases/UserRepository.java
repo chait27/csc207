@@ -1,14 +1,14 @@
-package databases;
+package v1.trial.databases;
 
-import entity.art.Art;
-import entity.markets.Wallet;
-import entity.user.AdminUser;
-import entity.user.BasicUser;
-import entity.user.User;
-import exceptions.user.UserDoesNotExistException;
-import factory.UserFactory;
-import usecases.art.ArtManager;
-import usecases.markets.WalletManager;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.entity.user.AdminUser;
+import v1.trial.entity.user.BasicUser;
+import v1.trial.entity.user.User;
+import v1.trial.exceptions.user.UserDoesNotExistException;
+import v1.trial.factory.UserFactory;
+import v1.trial.usecases.art.ArtManager;
+import v1.trial.usecases.markets.WalletManager;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

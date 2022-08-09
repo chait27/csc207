@@ -1,8 +1,8 @@
-package usecases.user;
+package v1.trial.usecases.user;
 
-import entity.user.User;
-import exceptions.user.NewPasswordIsTheSameAsOldPasswordException;
-import exceptions.user.PasswordsDontMatchException;
+import v1.trial.entity.user.User;
+import v1.trial.exceptions.user.NewPasswordIsTheSameAsOldPasswordException;
+import v1.trial.exceptions.user.PasswordsDontMatchException;
 
 public class ChangeUser {
     private final User user;

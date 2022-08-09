@@ -1,5 +1,5 @@
-package usecases.markets;
-import entity.markets.Wallet;
+package v1.trial.usecases.markets;
+import v1.trial.entity.markets.Wallet;
 
 import java.util.ArrayList;
 import java.util.List;

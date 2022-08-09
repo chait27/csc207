@@ -1,6 +1,6 @@
-package entity.user;
+package v1.trial.entity.user;
 
-import entity.markets.Wallet;
+import v1.trial.entity.markets.Wallet;
 import java.time.LocalDateTime;
 import java.util.AbstractMap;
 import java.util.ArrayList;

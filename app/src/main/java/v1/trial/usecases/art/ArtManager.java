@@ -1,8 +1,8 @@
-package usecases.art;
-import databases.ArtRepository;
-import entity.art.Art;
-import usecases.markets.WalletManager;
-import utils.DynamoDBConfig;
+package v1.trial.usecases.art;
+import v1.trial.databases.ArtRepository;
+import v1.trial.entity.art.Art;
+import v1.trial.usecases.markets.WalletManager;
+import v1.trial.utils.DynamoDBConfig;
 
 import java.util.*;
 

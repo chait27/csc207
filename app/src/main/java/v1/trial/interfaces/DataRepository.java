@@ -1,4 +1,4 @@
-package interfaces;
+package v1.trial.interfaces;
 
 import java.util.List;
 

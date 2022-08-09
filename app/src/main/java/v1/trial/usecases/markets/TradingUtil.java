@@ -1,10 +1,10 @@
-package usecases.markets;
+package v1.trial.usecases.markets;
 
-import databases.UserRepository;
-import entity.art.Art;
-import entity.markets.Wallet;
-import entity.user.User;
-import usecases.art.ArtManager;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.entity.user.User;
+import v1.trial.usecases.art.ArtManager;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package exceptions.user;
+package v1.trial.exceptions.user;
 
 public class UsernameAlreadyExistsException extends UsernameException {
     public UsernameAlreadyExistsException(final String username) {

@@ -1,12 +1,12 @@
-package databases;
+package v1.trial.databases;
 
-import entity.art.Art;
-import entity.markets.Wallet;
-import entity.user.BasicUser;
-import entity.user.User;
-import usecases.art.ArtManager;
-import usecases.markets.WalletManager;
-import utils.Config;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.entity.user.BasicUser;
+import v1.trial.entity.user.User;
+import v1.trial.usecases.art.ArtManager;
+import v1.trial.usecases.markets.WalletManager;
+import v1.trial.utils.Config;
 
 import java.io.FileWriter;
 import java.io.IOException;

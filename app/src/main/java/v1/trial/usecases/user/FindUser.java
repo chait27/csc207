@@ -1,11 +1,11 @@
-package usecases.user;
+package v1.trial.usecases.user;
 
-import databases.UserRepository;
-import entity.art.Art;
-import entity.user.User;
-import exceptions.user.UserDoesNotExistException;
-import usecases.art.ArtManager;
-import usecases.markets.WalletManager;
+import v1.trial.databases.UserRepository;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.user.User;
+import v1.trial.exceptions.user.UserDoesNotExistException;
+import v1.trial.usecases.art.ArtManager;
+import v1.trial.usecases.markets.WalletManager;
 
 import java.util.ArrayList;
 import java.util.List;

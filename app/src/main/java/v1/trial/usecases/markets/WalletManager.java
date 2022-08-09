@@ -1,12 +1,12 @@
-package usecases.markets;
+package v1.trial.usecases.markets;
 
-import databases.UserRepository;
-import databases.WalletRepository;
-import entity.user.User;
-import entity.markets.Wallet;
-import exceptions.market.WalletNotFoundException;
-import usecases.user.FindUser;
-import utils.DynamoDBConfig;
+import v1.trial.databases.UserRepository;
+import v1.trial.databases.WalletRepository;
+import v1.trial.entity.user.User;
+import v1.trial.entity.markets.Wallet;
+import v1.trial.exceptions.market.WalletNotFoundException;
+import v1.trial.usecases.user.FindUser;
+import v1.trial.utils.DynamoDBConfig;
 
 import java.util.*;
 

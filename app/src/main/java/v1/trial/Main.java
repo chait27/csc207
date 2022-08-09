@@ -1,5 +1,5 @@
-import controller.FrontController;
-import utils.Config;
+import v1.trial.controller.FrontController;
+import v1.trial.utils.Config;
 
 public class Main {
     public static void main(String[] args) {

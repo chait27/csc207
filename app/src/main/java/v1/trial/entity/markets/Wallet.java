@@ -1,4 +1,4 @@
-package entity.markets;
+package v1.trial.entity.markets;
 
 import java.util.*;
 
@@ -6,9 +6,9 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import com.amazonaws.services.dynamodbv2.document.Item;
-import entity.art.Art;
-import entity.user.User;
-import interfaces.Merchandise;
+import v1.trial.entity.art.Art;
+import v1.trial.entity.user.User;
+import v1.trial.interfaces.Merchandise;
 
 @DynamoDBTable(tableName = "wallet")
 public class Wallet implements Merchandise {

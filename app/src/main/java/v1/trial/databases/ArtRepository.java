@@ -9,9 +9,9 @@ import com.amazonaws.services.dynamodbv2.document.Table;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.ScanRequest;
 import com.amazonaws.services.dynamodbv2.model.ScanResult;
-import entity.art.Art;
-import interfaces.DataRepository;
-import utils.DynamoDBConfig;
+import v1.trial.entity.art.Art;
+import v1.trial.interfaces.DataRepository;
+import v1.trial.utils.DynamoDBConfig;
 
 import java.util.ArrayList;
 import java.util.HashMap;

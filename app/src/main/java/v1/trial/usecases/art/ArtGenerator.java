@@ -1,4 +1,4 @@
-package usecases.art;
+package v1.trial.usecases.art;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
