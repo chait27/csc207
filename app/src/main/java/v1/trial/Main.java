@@ -1,3 +1,5 @@
+package v1.trial;
+
 import v1.trial.controller.FrontController;
 import v1.trial.utils.Config;
 

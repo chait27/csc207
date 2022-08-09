@@ -1,7 +1,7 @@
 package v1.trial.entity.user;
 
 import v1.trial.interfaces.IBannableUser;
-import v1.trial.java.time.LocalDateTime;
+import java.time.LocalDateTime;
 
 public class BasicUser extends User implements IBannableUser {
 
