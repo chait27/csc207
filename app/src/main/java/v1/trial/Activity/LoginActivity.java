@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(username.equals("admin") && password.equals("admin")) {
                     // get is admin
-                    boolean isAdmin;
+                    boolean isAdmin = true;
 
                     if(isAdmin) {
                         openMainMenuAdminActivity();

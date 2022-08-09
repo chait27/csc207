@@ -60,6 +60,7 @@ public class MainMenuAdminActivity extends AppCompatActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 // Save application info then exist app
 
                 finish();
@@ -70,7 +71,7 @@ public class MainMenuAdminActivity extends AppCompatActivity {
         adminButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), MarketActivity.class);
+                Intent intent = new Intent(view.getContext(), AdminActivity.class);
                 view.getContext().startActivity(intent);
             }
         });

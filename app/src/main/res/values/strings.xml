@@ -18,15 +18,21 @@
     <string name="Option3">3</string>
     <string name="Option4">4</string>
     <string name="Option5">5</string>
+    <string name="Option6">6</string>
 
     <string name="MainMenuMarket">Go to Market</string>
     <string name="MainMenuWallet">Go to Wallets</string>
     <string name="MainMenuProfile">Go to Profile</string>
+    <string name="MainMenuAdmin">Admin Controls</string>
     <string name="MainMenuLogout">Logout</string>
     <string name="MainMenuExit">Exit Application</string>
-    <string name="MainMenuAdmin">Admin Controls</string>
-    <string name="Option6">6</string>
 
+    <!-- String Default -->
+    <string name="GoBack">Go Back</string>
 
-    <!-- Strings -->
+    <!-- Strings Market Page -->
+
+    <string name="ViewItem">View Items on Market</string>
+    <string name="PutItem">Put Item onto Market</string>
+
 </resources>

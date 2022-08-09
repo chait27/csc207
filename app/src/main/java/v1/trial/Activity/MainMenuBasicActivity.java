@@ -46,6 +46,7 @@ public class MainMenuBasicActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //Logout User
 
                 Intent intent = new Intent(view.getContext(), LoginActivity.class);
@@ -56,6 +57,7 @@ public class MainMenuBasicActivity extends AppCompatActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 // Save application info then exist app
 
                 finish();
