@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ASCII_Login</string>
+    <string name="activity_login">LoginActivity</string>
+    <string name="activity_mainMenu">MainMenuActivity</string>
+    <string name="first_fragment_label">first</string>
+    <string name="second_fragment_label">second</string>
+
+    <!-- Strings Login Page -->
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="loginTryAgain">Try Again</string>
+
+    <!-- Strings Main Menu Page -->
+    <string name="MainMenuText">Main Menu</string>
+    <string name="Option1">1</string>
+    <string name="Option2">2</string>
+    <string name="Option3">3</string>
+    <string name="Option4">4</string>
+    <string name="Option5">5</string>
+
+    <string name="MainMenuMarket">Go to Market</string>
+    <string name="MainMenuWallet">Go to Wallets</string>
+    <string name="MainMenuProfile">Go to Profile</string>
+    <string name="MainMenuLogout">Logout</string>
+    <string name="MainMenuExit">Exit Application</string>
+    <string name="MainMenuAdmin">Admin Controls</string>
+
+
+
+    <!-- Strings -->
+</resources>
