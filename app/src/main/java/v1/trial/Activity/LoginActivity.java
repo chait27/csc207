@@ -28,7 +28,15 @@ public class LoginActivity extends AppCompatActivity {
                 String password = passwordInput.getText().toString();
 
                 if(username.equals("admin") && password.equals("admin")) {
-                    openMainMenuActivity();
+                    // get is admin
+                    boolean isAdmin;
+
+                    if(isAdmin) {
+                        openMainMenuAdminActivity();
+                    }
+                    else {
+                        openMainMenuBasicActivity();
+                    }
                 }
                 else {
                     TextView printResult = findViewById(R.id.resultTestView);
@@ -38,8 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void openMainMenuActivity() {
+    private void openMainMenuAdminActivity() {
         Intent intent = new Intent(this, MainMenuAdminActivity.class);
+        startActivity(intent);
+    }
+
+    private void openMainMenuBasicActivity() {
+        Intent intent = new Intent(this, MainMenuBasicActivity.class);
         startActivity(intent);
     }
 }
