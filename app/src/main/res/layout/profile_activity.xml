@@ -5,40 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/option4Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="124dp"
-        android:text="@string/GoBack"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Option4Text" />
-
-    <Button
-        android:id="@+id/option"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/Option5"
-        app:layout_constraintEnd_toStartOf="@+id/option4Text"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Option4" />
-
-    <TextView
-        android:id="@+id/resultTestView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option" />
-
     <View
         android:id="@+id/TopDivider"
         android:layout_width="wrap_content"
@@ -56,7 +22,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="250dp"
-        android:text="@string/Wallet"
+        android:text="@string/Profile"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -72,7 +38,7 @@
         android:layout_marginEnd="20dp"
         android:text="@string/Option1"
         app:layout_constraintEnd_toStartOf="@+id/Option1Text"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopDivider" />
 
@@ -85,7 +51,6 @@
         android:layout_marginEnd="20dp"
         android:text="@string/Option2"
         app:layout_constraintEnd_toStartOf="@+id/Option2Text"
-        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option1" />
 
@@ -98,7 +63,6 @@
         android:layout_marginEnd="20dp"
         android:text="@string/Option3"
         app:layout_constraintEnd_toStartOf="@+id/Option3Text"
-        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option2" />
 
@@ -111,7 +75,7 @@
         android:layout_marginEnd="20dp"
         android:text="@string/Option4"
         app:layout_constraintEnd_toStartOf="@+id/Option4Text"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option3" />
 
@@ -119,9 +83,9 @@
         android:id="@+id/Option1Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="76dp"
-        android:text="@string/ViewLiquidity"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/ViewProfile"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/TopDivider" />
@@ -130,9 +94,9 @@
         android:id="@+id/Option2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="60dp"
-        android:text="@string/ViewArt"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/UpdateUsername"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option1Text" />
@@ -142,8 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="36dp"
-        android:text="@string/ViewWalletWorth"
+        android:layout_marginEnd="32dp"
+        android:text="@string/UpdatePassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option2Text" />
@@ -152,9 +116,9 @@
         android:id="@+id/Option4Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/MintArt"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/GoBack"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option3Text" />

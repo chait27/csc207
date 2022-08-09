@@ -13,11 +13,11 @@ public class MainMenuBasicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu_basic_activity);
 
-        Button marketButton = (Button) this.findViewById(R.id.WalletOption1);
-        Button walletButton = (Button) this.findViewById(R.id.WalletOption2);
-        Button profileButton = (Button) this.findViewById(R.id.WalletOption3);
-        Button logoutButton = (Button) this.findViewById(R.id.WalletOption4);
-        Button exitButton = (Button) this.findViewById(R.id.mainMenuOption5);
+        Button marketButton = (Button) this.findViewById(R.id.Option1);
+        Button walletButton = (Button) this.findViewById(R.id.Option2);
+        Button profileButton = (Button) this.findViewById(R.id.Option3);
+        Button logoutButton = (Button) this.findViewById(R.id.Option4);
+        Button exitButton = (Button) this.findViewById(R.id.Option5);
 
         marketButton.setOnClickListener(new View.OnClickListener() {
             @Override

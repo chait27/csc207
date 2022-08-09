@@ -6,17 +6,17 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <View
-        android:id="@+id/mainMenuTopDivider"
+        android:id="@+id/TopDivider"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainMenuHeadder" />
+        app:layout_constraintTop_toBottomOf="@+id/Headder" />
 
     <TextView
-        android:id="@+id/mainMenuHeadder"
+        android:id="@+id/Headder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -30,56 +30,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/WalletOption1"
+        android:id="@+id/Option1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option1"
-        app:layout_constraintEnd_toStartOf="@+id/WalletOption1Text"
+        app:layout_constraintEnd_toStartOf="@+id/Option1Text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainMenuTopDivider" />
+        app:layout_constraintTop_toBottomOf="@+id/TopDivider" />
 
     <Button
-        android:id="@+id/WalletOption2"
+        android:id="@+id/Option2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option2"
-        app:layout_constraintEnd_toStartOf="@+id/WalletOption2Text"
+        app:layout_constraintEnd_toStartOf="@+id/Option2Text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption1" />
+        app:layout_constraintTop_toBottomOf="@+id/Option1" />
 
     <Button
-        android:id="@+id/WalletOption3"
+        android:id="@+id/Option3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option3"
-        app:layout_constraintEnd_toStartOf="@+id/WalletOption3Text"
+        app:layout_constraintEnd_toStartOf="@+id/Option3Text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption2" />
+        app:layout_constraintTop_toBottomOf="@+id/Option2" />
 
     <Button
-        android:id="@+id/WalletOption4"
+        android:id="@+id/Option4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:text="@string/Option4"
-        app:layout_constraintEnd_toStartOf="@+id/WalletOption4Text"
+        app:layout_constraintEnd_toStartOf="@+id/Option4Text"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption3" />
+        app:layout_constraintTop_toBottomOf="@+id/Option3" />
 
     <TextView
-        android:id="@+id/WalletOption1Text"
+        android:id="@+id/Option1Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -87,10 +87,10 @@
         android:text="@string/ViewItem"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mainMenuTopDivider" />
+        app:layout_constraintTop_toTopOf="@+id/TopDivider" />
 
     <TextView
-        android:id="@+id/WalletOption2Text"
+        android:id="@+id/Option2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -98,10 +98,10 @@
         android:text="@string/PutItem"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption1Text" />
+        app:layout_constraintTop_toBottomOf="@+id/Option1Text" />
 
     <TextView
-        android:id="@+id/WalletOption3Text"
+        android:id="@+id/Option3Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -109,10 +109,10 @@
         android:text="@string/MarketTrade"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption2Text" />
+        app:layout_constraintTop_toBottomOf="@+id/Option2Text" />
 
     <TextView
-        android:id="@+id/WalletOption4Text"
+        android:id="@+id/Option4Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -120,6 +120,6 @@
         android:text="@string/GoBack"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WalletOption3Text" />
+        app:layout_constraintTop_toBottomOf="@+id/Option3Text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

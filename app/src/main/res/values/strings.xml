@@ -43,4 +43,18 @@
     <string name="ViewWalletWorth">View Wallet Worth</string>
     <string name="MintArt">Mint New Art</string>
 
+    <!-- Strings Profile Page -->
+    <string name="Profile">Profile</string>
+    <string name="ViewProfile">View Profile</string>
+    <string name="UpdateUsername">Update Username</string>
+    <string name="UpdatePassword">Update Password</string>
+
+    <!-- Strings Admin Control Page -->
+    <string name="AdminControl">Admin Controls</string>
+    <string name="ViewUser">View All Users</string>
+    <string name="DelUser">Delete User</string>
+    <string name="AddUser">Create New User</string>
+    <string name="BanUser">Ban User</string>
+    <string name="UnbanUser">Unban User</string>
+
 </resources>

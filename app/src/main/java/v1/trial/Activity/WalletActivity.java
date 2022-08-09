@@ -15,16 +15,17 @@ public class WalletActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wallet_activity);
 
-        Button liquidityButton = (Button) this.findViewById(R.id.WalletOption1);
-        Button viewArtButton = (Button) this.findViewById(R.id.WalletOption2);
-        Button viewWorthButton = (Button) this.findViewById(R.id.WalletOption3);
-        Button backButton = (Button) this.findViewById(R.id.WalletOption4);
+        Button liquidityButton = (Button) this.findViewById(R.id.Option1);
+        Button viewArtButton = (Button) this.findViewById(R.id.Option2);
+        Button viewWorthButton = (Button) this.findViewById(R.id.Option3);
+        Button makeArtButton = (Button) this.findViewById(R.id.Option4);
+        Button backButton = (Button) this.findViewById(R.id.Option5);
 
         liquidityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Calculate Worth
-                String worth;
+                String worth = "";
 
                 TextView printResult = findViewById(R.id.resultTestView);
                 printResult.setText(worth);
@@ -35,10 +36,18 @@ public class WalletActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Calculate Worth
-                String worth;
+                String worth = "";
 
                 TextView printResult = findViewById(R.id.resultTestView);
                 printResult.setText(worth);
+            }
+        });
+
+        makeArtButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // create art
+
             }
         });
 
@@ -63,7 +72,7 @@ public class WalletActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // get art(s)
-                String art;
+                String art = "";
 
                 TextView printResult = findViewById(R.id.resultTestView);
                 printResult.setText(art);
