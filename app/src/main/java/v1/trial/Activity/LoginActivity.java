@@ -8,9 +8,20 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.util.Optional;
+
 import v1.trial.R;
+import v1.trial.controller.FrontController;
+import v1.trial.usecases.user.UserFacade;
 
 public class LoginActivity extends AppCompatActivity {
+    private String username;
+    private String password;
+    private final FrontController frontController;
+
+    public LoginActivity(FrontController fc) {
+        this.frontController = fc;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,18 +29,21 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Button loginButton = (Button)findViewById(R.id.loginButton);
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText usernameInput = (EditText) findViewById(R.id.usernameInput);
                 EditText passwordInput = (EditText) findViewById(R.id.passwordInput);
 
-                String username = usernameInput.getText().toString();
-                String password = passwordInput.getText().toString();
+                username = usernameInput.getText().toString();
+                password = passwordInput.getText().toString();
 
                 if(username.equals("admin") && password.equals("admin")) {
                     // get is admin
                     boolean isAdmin = true;
+
+                    checkForAdminUser(username, password);
 
                     if(isAdmin) {
                         openMainMenuAdminActivity();
@@ -54,5 +68,23 @@ public class LoginActivity extends AppCompatActivity {
     private void openMainMenuBasicActivity() {
         Intent intent = new Intent(this, MainMenuBasicActivity.class);
         startActivity(intent);
+    }
+
+    private void checkForAdminUser(String username, String password) {
+        UserFacade userFacade = new UserFacade(null, this.frontController.getUserRepository(),
+                this.frontController.getWalletManager(),
+                this.frontController.getArtManager());
+        userFacade.login(username, password);
+
+        setActiveUserToAdmin(userFacade);
+    }
+
+    private void setActiveUserToAdmin(UserFacade userFacade) {
+        if (userFacade.getIsAdmin()) {
+            this.frontController.setActiveUser(Optional.of(userFacade.createAdminFacade()));
+        }
+        else {
+            this.frontController.setActiveUser(Optional.of(userFacade));
+        }
     }
 }

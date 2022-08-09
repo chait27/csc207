@@ -5,7 +5,7 @@ import v1.trial.utils.Config;
 
 public class Main {
     public static void main(String[] args) {
-        Config config = new Config("./storage/",
+        Config config = new Config("storage/",
                                    "basicUsers.csv",
                                    "adminUsers.csv",
                                    "events.csv",
