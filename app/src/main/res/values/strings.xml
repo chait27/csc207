@@ -39,6 +39,8 @@
     <!-- Strings Wallet Page -->
     <string name="Wallet">Wallet</string>
     <string name="ViewLiquidity">View Liquidity</string>
+    <string name="ViewWallet">View Wallet(s)</string>
+    <string name="CreateWallet">Create New Wallet</string>
     <string name="ViewArt">View Art Pieces</string>
     <string name="ViewWalletWorth">View Wallet Worth</string>
     <string name="MintArt">Mint New Art</string>

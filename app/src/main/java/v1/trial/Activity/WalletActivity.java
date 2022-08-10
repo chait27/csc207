@@ -15,69 +15,29 @@ public class WalletActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wallet_activity);
 
-        Button liquidityButton = (Button) this.findViewById(R.id.Option1);
-        Button viewArtButton = (Button) this.findViewById(R.id.Option2);
-        Button viewWorthButton = (Button) this.findViewById(R.id.Option3);
-        Button makeArtButton = (Button) this.findViewById(R.id.Option4);
-        Button backButton = (Button) this.findViewById(R.id.Option5);
+        Button viewWalletButton = (Button) this.findViewById(R.id.Option1);
+        Button createWalletButton = (Button) this.findViewById(R.id.Option2);
+        Button backButton = (Button) this.findViewById(R.id.Option3);
 
-        liquidityButton.setOnClickListener(new View.OnClickListener() {
+        viewWalletButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Calculate Worth
-                String worth = "";
-
-                TextView printResult = findViewById(R.id.resultTestView);
-                printResult.setText(worth);
-            }
-        });
-
-        viewWorthButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Calculate Worth
-                String worth = "";
-
-                TextView printResult = findViewById(R.id.resultTestView);
-                printResult.setText(worth);
-            }
-        });
-
-        makeArtButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // create art
+                // display user's wallets
 
             }
         });
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        viewWalletButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                //check if logged on user is admin/basic
-                boolean isAdmin = true;
 
                 Intent intent;
-                if (isAdmin) {
-                    intent = new Intent(view.getContext(), MainMenuAdminActivity.class);
-                } else {
-                    intent = new Intent(view.getContext(), MainMenuBasicActivity.class);
-                }
-                view.getContext().startActivity(intent);
+                intent.putExtra("walletID", wallet);
+                intent = new Intent(view.getContext(), WalletActivity.class);
+
             }
         });
 
-        viewArtButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // get art(s)
-                String art = "";
-
-                TextView printResult = findViewById(R.id.resultTestView);
-                printResult.setText(art);
-            }
-        });
     }
-
 }

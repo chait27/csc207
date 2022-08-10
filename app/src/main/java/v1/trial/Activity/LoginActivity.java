@@ -7,26 +7,32 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
 import java.util.Optional;
 
 import v1.trial.R;
 import v1.trial.controller.FrontController;
 import v1.trial.usecases.user.UserFacade;
+import v1.trial.utils.Config;
 
 public class LoginActivity extends AppCompatActivity {
     private String username;
     private String password;
-    private final FrontController frontController;
-
-    public LoginActivity(FrontController fc) {
-        this.frontController = fc;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+
+        // Login acts as Main
+        Config config = new Config("./storage/",
+                "basicUsers.csv",
+                "adminUsers.csv",
+                "events.csv",
+                "wallets.csv",
+                "asciiArts.csv");
+        FrontController controller = new FrontController(config);
+        controller.dispatchRequest("LOGIN");
+
 
         Button loginButton = (Button)findViewById(R.id.loginButton);
 
@@ -62,6 +68,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void openMainMenuAdminActivity() {
         Intent intent = new Intent(this, MainMenuAdminActivity.class);
+        intent.putExtra("username", username);
+        intent.putExtra("password", password);
         startActivity(intent);
     }
 

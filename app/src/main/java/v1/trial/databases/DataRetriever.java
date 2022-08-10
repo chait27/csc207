@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import utils.Config;
+import v1.trial.utils.Config;
 
 public class DataRetriever {
     private final String filePath;

@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/option3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="124dp"
+        android:text="@string/GoBack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option4Text" />
+
+    <Button
+        android:id="@+id/Option5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Option5"
+        app:layout_constraintEnd_toStartOf="@+id/option3Text"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option4" />
 
     <TextView
         android:id="@+id/resultTestView"
@@ -58,23 +80,40 @@
         android:id="@+id/Option2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/Option2"
+        app:layout_constraintEnd_toStartOf="@+id/Option2Text"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option1" />
 
     <Button
-        android:id="@+id/Option5"
+        android:id="@+id/Option3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/Option3"
-        app:layout_constraintEnd_toStartOf="@+id/option3Text"
-        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintEnd_toStartOf="@+id/Option3Text"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option2" />
+
+    <Button
+        android:id="@+id/Option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/Option4"
+        app:layout_constraintEnd_toStartOf="@+id/Option4Text"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option3" />
 
     <TextView
         android:id="@+id/Option1Text"
@@ -82,31 +121,42 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="76dp"
-        android:text="@string/ViewWallet"
+        android:text="@string/ViewLiquidity"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/TopDivider" />
 
     <TextView
-        android:id="@+id/option2Text"
+        android:id="@+id/Option2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="40dp"
-        android:text="@string/CreateWallet"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/ViewArt"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Option1Text" />
 
     <TextView
-        android:id="@+id/option3Text"
+        android:id="@+id/Option3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/ViewWalletWorth"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option2Text" />
+
+    <TextView
+        android:id="@+id/Option4Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="130dp"
-        android:text="@string/GoBack"
+        android:layout_marginEnd="84dp"
+        android:text="@string/MintArt"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option2Text" />
+        app:layout_constraintTop_toBottomOf="@+id/Option3Text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
