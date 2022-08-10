@@ -22,19 +22,32 @@ public class WalletActivity extends AppCompatActivity {
         viewWalletButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // display user's wallets
+                // display user's wallets if available
+                Intent intent;
+                intent.putExtra("walletID", wallet);
+                intent = new Intent(view.getContext(), WalletActivity.class);
 
             }
         });
 
-        viewWalletButton.setOnClickListener(new View.OnClickListener() {
+        createWalletButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+            }
+        });
 
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // check user is admin/basic
+                boolean isAdmin = true;
                 Intent intent;
-                intent.putExtra("walletID", wallet);
-                intent = new Intent(view.getContext(), WalletActivity.class);
+                if(isAdmin) {
+                    intent = new Intent(view.getContext(), MainMenuAdminActivity.class);
+                } else {
+                    intent = new Intent(view.getContext(), MainMenuBasicActivity.class);
+                }
 
             }
         });
