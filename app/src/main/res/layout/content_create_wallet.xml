@@ -6,27 +6,16 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_content_create_wallet"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:navGraph="@navigation/nav_graph2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="184dp"
-        android:layout_height="49dp"
+        android:layout_width="329dp"
+        android:layout_height="131dp"
+        android:gravity="center"
         android:text="Wallet Creation"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="63dp" />
 
     <EditText
         android:id="@+id/editText1"
@@ -35,23 +24,23 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name of Wallet"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="140dp" />
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="186dp" />
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="263dp"
-        android:layout_height="107dp"
+        android:layout_width="273dp"
+        android:layout_height="116dp"
         android:text="This is a private wallet"
-        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteX="74dp"
         tools:layout_editor_absoluteY="246dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="178dp"
+        android:layout_height="78dp"
         android:text="Create Wallet"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="422dp" />
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="420dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
