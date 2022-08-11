@@ -5,12 +5,11 @@ import v1.trial.exceptions.user.UserIsNotBannableException;
 import v1.trial.exceptions.user.UsernameAlreadyExistsException;
 import v1.trial.usecases.user.AdminFacade;
 import v1.trial.usecases.user.UserFacade;
-import view.AdminView;
+import v1.trial.view.AdminView;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -69,10 +68,10 @@ public class AdminController {
 //                } else {
 //                    activeAdminUser.deleteUser(inputUsername);
 //                }
-//                this.view.showDeleteSuccess(inputUsername);
+//                this.v1.trial.view.showDeleteSuccess(inputUsername);
 //            }
 //        } catch (UserDoesNotExistException e) {
-//            this.view.showErrorMessage(e.getMessage());
+//            this.v1.trial.view.showErrorMessage(e.getMessage());
 //        }
         this.frontController.dispatchRequest("GET ADMIN ACTIONS");
     }
@@ -119,10 +118,10 @@ public class AdminController {
 //                if(frontController.getActiveUser().isPresent()) {
 //                    AdminFacade activeAdminUser = ((AdminFacade) this.frontController.getActiveUser().get());
 //                    activeAdminUser.createUser(username, password, isAdmin);
-//                    this.view.showCreateUserSuccess(username);
+//                    this.v1.trial.view.showCreateUserSuccess(username);
 //                }
 //            } catch (UsernameAlreadyExistsException e) {
-//                this.view.showErrorMessage(e.getMessage());
+//                this.v1.trial.view.showErrorMessage(e.getMessage());
 //            }
             this.frontController.dispatchRequest("GET ADMIN ACTIONS");
         }
@@ -168,12 +167,12 @@ public class AdminController {
 //                }
 //                DateTimeFormatter format = DateTimeFormatter.ofPattern("dd MMM, yyyy HH:mm:ss");
 //                String formatDateTime = LocalDateTime.now().plusMinutes(Integer.parseInt(stringTimeOfBan)).format(format);
-//                this.view.showBanSuccess(inputUsername, formatDateTime);
+//                this.v1.trial.view.showBanSuccess(inputUsername, formatDateTime);
 //            }
 //        } catch (NumberFormatException e) {
-//            this.view.showErrorMessage("Input the ban length as an integer amount of minutes and try again.");
+//            this.v1.trial.view.showErrorMessage("Input the ban length as an integer amount of minutes and try again.");
 //        } catch (UserDoesNotExistException | UserIsNotBannableException e) {
-//            this.view.showErrorMessage(e.getMessage());
+//            this.v1.trial.view.showErrorMessage(e.getMessage());
 //        }
         frontController.dispatchRequest("GET ADMIN ACTIONS");
     }

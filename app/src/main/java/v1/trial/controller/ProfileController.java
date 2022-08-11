@@ -1,6 +1,6 @@
 package v1.trial.controller;
 
-import view.ProfileView;
+import v1.trial.view.ProfileView;
 
 import java.time.LocalDateTime;
 

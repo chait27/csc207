@@ -5,7 +5,7 @@ import v1.trial.usecases.art.ArtGenerator;
 import v1.trial.usecases.art.ArtManager;
 import v1.trial.usecases.markets.WalletFacade;
 import v1.trial.usecases.markets.WalletManager;
-import view.WalletView;
+import v1.trial.view.WalletView;
 
 import java.io.IOException;
 import java.util.UUID;

@@ -1,5 +1,6 @@
 package v1.trial.Activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -75,5 +76,9 @@ public class MainMenuAdminActivity extends AppCompatActivity {
                 view.getContext().startActivity(intent);
             }
         });
+    }
+
+    public static Intent makeIntent(Context context) {
+        return new Intent(context, MainMenuAdminActivity.class);
     }
 }

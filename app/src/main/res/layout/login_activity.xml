@@ -82,11 +82,4 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="50dp" app:backgroundTint="#009688"
             tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck"
             android:textSize="26sp"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/resultTestView"
-            app:layout_constraintTop_toBottomOf="@+id/loginButton"
-            android:layout_marginTop="50dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

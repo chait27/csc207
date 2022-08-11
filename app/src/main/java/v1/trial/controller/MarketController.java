@@ -4,7 +4,7 @@ import v1.trial.interfaces.Merchandise;
 import v1.trial.usecases.art.ArtManager;
 import v1.trial.usecases.markets.Market;
 import v1.trial.usecases.markets.WalletManager;
-import view.MarketView;
+import v1.trial.view.MarketView;
 import java.util.List;
 import java.util.UUID;
 

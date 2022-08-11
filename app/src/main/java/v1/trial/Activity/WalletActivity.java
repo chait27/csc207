@@ -24,7 +24,7 @@ public class WalletActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // display user's wallets if available
                 Intent intent;
-                intent.putExtra("walletID", wallet);
+
                 intent = new Intent(view.getContext(), WalletActivity.class);
 
             }

@@ -1,5 +1,6 @@
 package v1.trial.Activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -64,6 +65,10 @@ public class MainMenuBasicActivity extends AppCompatActivity {
                 System.exit(0);
             }
         });
+    }
+
+    public static Intent makeIntent(Context context) {
+        return new Intent(context, MainMenuAdminActivity.class);
     }
 }
 

@@ -4,7 +4,7 @@ import v1.trial.entity.markets.Wallet;
 import v1.trial.exceptions.user.ActionDoesNotExistException;
 import v1.trial.interfaces.Merchandise;
 import v1.trial.usecases.markets.WalletFacade;
-import view.ActionView;
+import v1.trial.view.ActionView;
 
 import java.util.*;
 

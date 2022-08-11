@@ -39,7 +39,6 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.5.1'
     implementation files('libs\\aws-java-sdk-core-1.12.276.jar')
     implementation files('libs\\aws-java-sdk-core-1.12.277.jar')
-    implementation files('libs\\aws-java-sdk-dynamodb-1.9.0.jar')
     implementation files('libs\\aws-java-sdk-dynamodb-1.12.276.jar')
     implementation files('libs\\aws-java-sdk-kms-1.12.276.jar')
     implementation files('libs\\aws-java-sdk-s3-1.12.276.jar')

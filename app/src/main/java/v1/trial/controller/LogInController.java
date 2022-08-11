@@ -3,7 +3,7 @@ package v1.trial.controller;
 import v1.trial.exceptions.user.IncorrectUserNameOrPasswordException;
 import v1.trial.exceptions.user.UserIsBannedException;
 import v1.trial.usecases.user.UserFacade;
-import view.LogInView;
+import v1.trial.view.LogInView;
 
 import java.util.Optional;
 

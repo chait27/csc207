@@ -1,18 +1,14 @@
 package v1.trial.controller;
 
-import com.amazonaws.services.dynamodbv2.document.DynamoDB;
-import com.amazonaws.services.dynamodbv2.document.Item;
-import com.amazonaws.services.dynamodbv2.document.Table;
 import v1.trial.databases.DataRetriever;
 import v1.trial.databases.DataSaver;
 import v1.trial.databases.UserRepository;
-import v1.trial.entity.art.Art;
 import v1.trial.usecases.art.ArtManager;
 import v1.trial.usecases.markets.WalletManager;
 import v1.trial.usecases.user.UserFacade;
 import v1.trial.utils.Config;
 import v1.trial.utils.DynamoDBConfig;
-import view.GenericView;
+import v1.trial.view.GenericView;
 
 import java.io.IOException;
 import java.util.Optional;

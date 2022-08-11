@@ -4,15 +4,10 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import java.util.Optional;
-
+import android.widget.Toast;
 import v1.trial.R;
-import v1.trial.controller.FrontController;
-import v1.trial.usecases.user.UserFacade;
-import v1.trial.utils.Config;
 
 public class LoginActivity extends AppCompatActivity {
     private String username;
@@ -23,17 +18,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        // Login acts as Main
-        Config config = new Config("./storage/",
-                "basicUsers.csv",
-                "adminUsers.csv",
-                "events.csv",
-                "wallets.csv",
-                "asciiArts.csv");
-        FrontController controller = new FrontController(config);
-        controller.dispatchRequest("LOGIN");
+        setupLoginButton();
+    }
 
-
+    private void setupLoginButton() {
         Button loginButton = (Button)findViewById(R.id.loginButton);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -49,50 +37,29 @@ public class LoginActivity extends AppCompatActivity {
                     // get is admin
                     boolean isAdmin = true;
 
-                    checkForAdminUser(username, password);
-
                     if(isAdmin) {
+                        Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                         openMainMenuAdminActivity();
                     }
                     else {
+                        Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                         openMainMenuBasicActivity();
                     }
                 }
                 else {
-                    TextView printResult = findViewById(R.id.resultTestView);
-                    printResult.setText(getResources().getString(R.string.loginTryAgain));
+                    Toast.makeText(LoginActivity.this, "Login Failed! Try Again.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
     private void openMainMenuAdminActivity() {
-        Intent intent = new Intent(this, MainMenuAdminActivity.class);
-        intent.putExtra("username", username);
-        intent.putExtra("password", password);
+        Intent intent = MainMenuAdminActivity.makeIntent(LoginActivity.this);
         startActivity(intent);
     }
 
     private void openMainMenuBasicActivity() {
-        Intent intent = new Intent(this, MainMenuBasicActivity.class);
+        Intent intent = MainMenuBasicActivity.makeIntent(LoginActivity.this);
         startActivity(intent);
-    }
-
-    private void checkForAdminUser(String username, String password) {
-        UserFacade userFacade = new UserFacade(null, this.frontController.getUserRepository(),
-                this.frontController.getWalletManager(),
-                this.frontController.getArtManager());
-        userFacade.login(username, password);
-
-        setActiveUserToAdmin(userFacade);
-    }
-
-    private void setActiveUserToAdmin(UserFacade userFacade) {
-        if (userFacade.getIsAdmin()) {
-            this.frontController.setActiveUser(Optional.of(userFacade.createAdminFacade()));
-        }
-        else {
-            this.frontController.setActiveUser(Optional.of(userFacade));
-        }
     }
 }
