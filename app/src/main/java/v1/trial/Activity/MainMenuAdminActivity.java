@@ -19,9 +19,9 @@ public class MainMenuAdminActivity extends AppCompatActivity {
         Button marketButton = (Button) this.findViewById(R.id.Option1);
         Button walletButton = (Button) this.findViewById(R.id.Option2);
         Button profileButton = (Button) this.findViewById(R.id.Option3);
+        Button adminButton = (Button) this.findViewById(R.id.Option4);
         Button logoutButton = (Button) this.findViewById(R.id.Option5);
         Button exitButton = (Button) this.findViewById(R.id.Option6);
-        Button adminButton = (Button) this.findViewById(R.id.Option4);
 
         marketButton.setOnClickListener(new View.OnClickListener() {
             @Override
