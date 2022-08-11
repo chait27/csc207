@@ -1,15 +1,15 @@
 package v1.trial.controller;
 
+import v1.trial.Activity.LoginActivity;
 import v1.trial.exceptions.user.IncorrectUserNameOrPasswordException;
 import v1.trial.exceptions.user.UserIsBannedException;
 import v1.trial.usecases.user.UserFacade;
-import v1.trial.view.LogInView;
 
 import java.util.Optional;
 
 public class LogInController {
     private final FrontController frontController;
-    private final LogInView view;
+    private final LoginActivity activity;
 
     /**
      * The controller responsible for logging a user in and out
@@ -17,46 +17,40 @@ public class LogInController {
      */
     public LogInController (FrontController frontController) {
         this.frontController = frontController;
-        this.view = new LogInView();
+        this.activity = new LoginActivity();
     }
 
     /**zz
      * logs the user in
      */
     public void login() {
-        this.view.showUsernamePrompt();
-        String username = this.frontController.userInput.nextLine();
-        this.view.showPasswordPrompt();
-        String password = this.frontController.userInput.nextLine();
-        try {
-            checkForAdminUser(username, password);
+        String username = this.activity.getUsername();
+        String password = this.activity.getPassword();
 
-            this.view.showLogInSuccess(this.frontController.getActiveUser().get().getUsername());
-
+        if(checkForUser(username, password)) {
             this.frontController.dispatchRequest("GET MAIN ACTIONS");
         }
-        catch (IncorrectUserNameOrPasswordException | UserIsBannedException e) {
-            this.view.showErrorMessage(e.getMessage());
-            this.frontController.dispatchRequest("LOGIN");
+        else {
+            this.activity.retry();
         }
     }
 
-    private void checkForAdminUser(String username, String password) {
+    private boolean checkForUser(String username, String password) {
         UserFacade userFacade = new UserFacade(null, this.frontController.getUserRepository(),
                                                           this.frontController.getWalletManager(),
                                                           this.frontController.getArtManager());
-        userFacade.login(username, password);
 
-        setActiveUserToAdmin(userFacade);
-    }
-
-    private void setActiveUserToAdmin(UserFacade userFacade) {
-        if (userFacade.getIsAdmin()) {
-            this.frontController.setActiveUser(Optional.of(userFacade.createAdminFacade()));
+        if(userFacade.login(username, password)) {
+            if(userFacade.getIsAdmin()) {
+                this.activity.loginSuccessAdmin();
+                this.frontController.setActiveUser(Optional.of(userFacade.createAdminFacade()));
+            } else {
+                this.activity.loginSuccessBasic();
+                this.frontController.setActiveUser(Optional.of(userFacade));
+            }
+            return true;
         }
-        else {
-            this.frontController.setActiveUser(Optional.of(userFacade));
-        }
+        return false;
     }
 
     /**
