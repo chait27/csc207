@@ -116,7 +116,11 @@ public class DataRetriever {
         List<SerializedArt> artData = new ArrayList<>();
         while ((line = reader.readLine()) != null) {
             String[] rawArtDatum = line.split(",");
-            artData.add(new SerializedArt(rawArtDatum[3], UUID.fromString(rawArtDatum[0]), UUID.fromString(rawArtDatum[1]), rawArtDatum[2].replace("newline", "\n"), Float.parseFloat(rawArtDatum[4])));
+            artData.add(new SerializedArt(rawArtDatum[3],
+                    UUID.fromString(rawArtDatum[0]),
+                    UUID.fromString(rawArtDatum[1]),
+                    rawArtDatum[2].replace("newline", "\n"),
+                    Float.parseFloat(rawArtDatum[4])));
 
         }
         return artData;

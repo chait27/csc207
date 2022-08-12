@@ -33,7 +33,9 @@ public class WalletActivity extends AppCompatActivity {
         createWalletButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //
+                Intent intent = new Intent(view.getContext(), CreateWalletActivity.class);
+                view.getContext().startActivity(intent);
             }
         });
 
