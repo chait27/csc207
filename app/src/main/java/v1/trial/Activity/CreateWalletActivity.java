@@ -20,7 +20,7 @@ public class CreateWalletActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_wallet);
+        setContentView(R.layout.content_create_wallet);
 
 
         prepareWalletCreationButton();

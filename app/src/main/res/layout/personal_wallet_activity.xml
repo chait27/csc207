@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TopDivider" />
 
     <Button
-        android:id="@+id/Option2"
+        android:id="@+id/WalletOption2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -100,7 +100,7 @@
         app:layout_constraintEnd_toStartOf="@+id/Option3Text"
         app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Option2" />
+        app:layout_constraintTop_toBottomOf="@+id/WalletOption2" />
 
     <Button
         android:id="@+id/Option4"

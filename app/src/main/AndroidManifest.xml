@@ -39,6 +39,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.BrowseWalletsActivity"></activity>
+        <activity android:name=".Activity.OpenWalletActivity"></activity>
     </application>
 
 </manifest>
