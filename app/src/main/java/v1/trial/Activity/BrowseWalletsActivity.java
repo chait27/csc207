@@ -12,7 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import v1.trial.R;
-import v1.trial.Activity.databinding.ActivityBrowseWalletsBinding;
+//import v1.trial.Activity.databinding.ActivityBrowseWalletsBinding;
 
 public class BrowseWalletsActivity extends AppCompatActivity {
 

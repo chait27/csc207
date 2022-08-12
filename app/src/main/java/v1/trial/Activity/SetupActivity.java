@@ -17,21 +17,17 @@ public class SetupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setup_activity);
 
-        Config config = new Config("./storage/",
-                "basicUsers.csv",
-                "adminUsers.csv",
-                "events.csv",
-                "wallets.csv",
-                "asciiArts.csv");
+        //Config config = new Config("./storage/", "basicUsers.csv",
+        // "adminUsers.csv", "events.csv","wallets.csv", "asciiArts.csv");
 
-        this.controller = new FrontController(config);
+        //this.controller = new FrontController(config);
         // controller.dispatchRequest("LOGIN");
 
         launchLogin();
     }
 
     private void launchLogin() {
-        Intent intent = LoginActivity.makeIntent(LoginActivity.this);
+        Intent intent = LoginActivity.makeIntent(SetupActivity.this);
         startActivity(intent);
     }
 }

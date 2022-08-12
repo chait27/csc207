@@ -38,9 +38,24 @@ public class LoginActivity extends AppCompatActivity {
                 username = usernameInput.getText().toString();
                 password = passwordInput.getText().toString();
 
-                Main.main();
+                //Main.main();
+                login();
             }
         });
+    }
+
+    private void login() {
+        if(username.equals("admin")&&password.equals("admin")) {
+            // check if user is admin or not
+            boolean isAdmin = true;
+            if(isAdmin) {
+                loginSuccessAdmin();
+            } else {
+                loginSuccessBasic();
+            }
+        } else {
+            retry();
+        }
     }
 
     public String getUsername() {
@@ -49,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
     public String getPassword() {
         return password;
     }
+
     public void loginSuccessAdmin() {
         Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
         openMainMenuAdminActivity();
