@@ -2,57 +2,49 @@ package v1.trial.Activity;
 
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Switch;
+import android.widget.Toast;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-//import v1.trial.Activity.databinding.ActivityCreateWalletBinding;
 
 import v1.trial.R;
 
 public class CreateWalletActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-//    private ActivityCreateWalletBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_create_wallet);
 
-//        binding = ActivityCreateWalletBinding.inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
-//
-//        setSupportActionBar(binding.toolbar);
 
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_create_wallet);
-//        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-//        binding.fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
-//    }
-
-        // collect information from ui elements and send them to CreateWallet
-
-//        @Override
-//        public boolean onSupportNavigateUp() {
-//            return true;
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_create_wallet);
-//        return NavigationUI.navigateUp(navController, appBarConfiguration)
-//                || super.onSupportNavigateUp();
-        //       }
+        prepareWalletCreationButton();
     }
+
+    private void prepareWalletCreationButton(){
+        Button confirmCreation = (Button) this.findViewById(R.id.createWalletButton);
+
+        confirmCreation.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   EditText walletName = (EditText) findViewById(R.id.editTextWalletName);
+                   Switch privateSwitch = (Switch) findViewById(R.id.walletPrivateSwitch);
+                   String walletIsPrivate;
+                   if (privateSwitch.isChecked()){
+                       walletIsPrivate = "private";
+                   } else {
+                       walletIsPrivate = "public";
+                   }
+
+                   Toast.makeText(CreateWalletActivity.this, "Created " + walletIsPrivate + " wallet \"" + walletName, Toast.LENGTH_LONG);
+               }
+           }
+        );
+    }
+
 }

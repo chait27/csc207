@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="63dp" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editTextWalletName"
         android:layout_width="273dp"
         android:layout_height="89dp"
         android:ems="10"
@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteY="186dp" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/walletPrivateSwitch"
         android:layout_width="273dp"
         android:layout_height="116dp"
         android:text="This is a private wallet"
@@ -36,7 +36,7 @@
         tools:layout_editor_absoluteY="246dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/createWalletButton"
         android:layout_width="178dp"
         android:layout_height="78dp"
         android:text="Create Wallet"

@@ -23,10 +23,8 @@ public class WalletActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // display user's wallets if available
-                Intent intent;
-
-                intent = new Intent(view.getContext(), WalletActivity.class);
-
+                Intent intent = new Intent(view.getContext(), BrowseWalletsActivity.class);
+                view.getContext().startActivity(intent);
             }
         });
 
@@ -50,6 +48,7 @@ public class WalletActivity extends AppCompatActivity {
                 } else {
                     intent = new Intent(view.getContext(), MainMenuBasicActivity.class);
                 }
+                view.getContext().startActivity(intent);
 
             }
         });

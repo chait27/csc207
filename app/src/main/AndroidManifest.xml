@@ -31,6 +31,14 @@
         <activity android:name=".Activity.ProfileActivity"></activity>
         <activity android:name=".Activity.PersonalWalletActivity"></activity>
         <activity android:name=".Activity.AdminActivity"></activity>
+        <activity
+            android:name=".Activity.CreateWalletActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.BrowseWalletsActivity"></activity>
     </application>
 
 </manifest>
