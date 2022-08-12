@@ -1,8 +1,7 @@
 package v1.trial.controller;
 
 import v1.trial.Activity.LoginActivity;
-import v1.trial.exceptions.user.IncorrectUserNameOrPasswordException;
-import v1.trial.exceptions.user.UserIsBannedException;
+import v1.trial.Activity.SetupActivity;
 import v1.trial.usecases.user.UserFacade;
 
 import java.util.Optional;

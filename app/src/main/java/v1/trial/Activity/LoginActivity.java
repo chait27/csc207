@@ -1,19 +1,21 @@
 package v1.trial.Activity;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import v1.trial.Main;
 import v1.trial.R;
 
 public class LoginActivity extends AppCompatActivity {
-    private String username;
-    private String password;
+    private static String username;
+    private static String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,5 +69,9 @@ public class LoginActivity extends AppCompatActivity {
     private void openMainMenuBasicActivity() {
         Intent intent = MainMenuBasicActivity.makeIntent(LoginActivity.this);
         startActivity(intent);
+    }
+
+    public static Intent makeIntent(Context context) {
+        return new Intent(context, LoginActivity.class);
     }
 }

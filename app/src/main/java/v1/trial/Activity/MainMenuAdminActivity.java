@@ -53,7 +53,7 @@ public class MainMenuAdminActivity extends AppCompatActivity {
 
                 //Logout User
 
-                Intent intent = new Intent(view.getContext(), LoginActivity.class);
+                Intent intent = new Intent(view.getContext(), SetupActivity.class);
                 view.getContext().startActivity(intent);
             }
         });
